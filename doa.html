@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doa Restu MPLS</title>
+    <meta
+      name="description"
+      content="Formulir doa dan dukungan untuk perjuangan mewakili sekolah di ajang Lomba AI tingkat internasional bidang cybersecurity."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-one"></div>
+    <div class="bg-orb orb-two"></div>
+    <div class="bg-orb orb-three"></div>
+
+    <main class="page-shell">
+      <section class="hero-card glass-card compact-hero">
+        <p class="eyebrow">Doa & Dukungan</p>
+        <h1>Berikan doa terbaik untuk tim kami</h1>
+        <p class="hero-lead">
+          Kami juga sedang berjuang untuk kualifikasi lomba AI tingkat internasional di bidang cybersecurity.
+          Doa dan dukungan dari kalian adalah kekuatan yang sangat berarti bagi kami.
+        </p>
+        <a class="btn btn-secondary" href="index.html">Kembali ke Kartu Ucapan</a>
+      </section>
+
+      <section class="glass-card form-card">
+        <div class="section-heading">
+          <p class="eyebrow">Tulis doa dan dukunganmu</p>
+          <h2>Isi form di bawah ini untuk mengirimkan doa atau dukungan.</h2>
+        </div>
+
+        <form id="prayer-form" data-form>
+          <label>
+            Nama
+            <input type="text" name="name" placeholder="Contoh: Aulia" required />
+          </label>
+
+          <label>
+            Peran
+            <select name="role" required>
+              <option value="">Pilih peran</option>
+              <option value="Kakak Pendamping">Kakak Pendamping</option>
+              <option value="Guru">Guru</option>
+            </select>
+          </label>
+
+          <label>
+            Doa & Dukungan
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Tulis doa, harapan, atau dukunganmu di sini..."
+              required
+            ></textarea>
+          </label>
+
+          <button class="btn btn-primary btn-block" type="submit">Kirim ke WhatsApp</button>
+        </form>
+      </section>
+    </main>
+
+    <div id="confetti-layer" class="confetti-layer" aria-hidden="true"></div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
